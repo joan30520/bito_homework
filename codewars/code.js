@@ -4,13 +4,6 @@ function digPow(n, p){
     for(var i=0;i<n.length;i++){
         ans+=Math.pow(n[i], p++);
     }
-    if(ans%n===0){
-        var x=ans/n;
-      return x;
-    }
-    else{return -1;}
-    
+    return ans%n===0?ans/n:-1;
   }
-
-  
   console.log(digPow(46288, 3));

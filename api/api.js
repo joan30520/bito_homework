@@ -47,7 +47,7 @@ const options = {
 return request.post(
    options,
    function(error, response, body) {
-     console.log('response:', JSON.stringify(body, 0, 2))
+     console.log('response:', JSON.stringify(body, 0, 2))  //(value,用於過濾內容，如果返回 undefined，則不會回傳對應的 key-value,会比上一级别缩进多这个数字值的空格)
    }
 )
 
