@@ -5,13 +5,13 @@ const apiKey = '66fd84f5acd77514917a6dcfc67d4862'
 const apiSecret = '$2a$12$WiD6c12b1TwxTw.5RVXQjOVXkPWf1K0p85TYSq4d5Nze5ZPfI9/Ve'
 const baseUrl = 'https://staging-api.bitopro.com/v3'
 
-const url = '/orders/yfi_twd'
+const url = '/orders/bito_twd'
 const nonce = Date.now()
 const completeURL = baseUrl + url
 
 const body = { 
    action: 'SELL',  
-   amount: '1',
+   amount: '600',
    price: '20',
    timestamp: nonce,
    type: 'LIMIT'
@@ -48,6 +48,7 @@ return request.post(
    options,
    function(error, response, body) {
      console.log('response:', JSON.stringify(body, 0, 2))  //(value,用於過濾內容，如果返回 undefined，則不會回傳對應的 key-value,会比上一级别缩进多这个数字值的空格)
+     console.log('statusCode:', response.statusCode);
    }
 )
 
