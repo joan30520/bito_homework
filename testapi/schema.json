@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "required": [],
+    "properties": {
+      "orderId": {"type": "string"},
+      "timestamp": {"type": "number"},
+      "action": {"type": "string"},
+      "amount": {"type": "string"},
+      "price": {"type": "string"},
+      "timeInForce": {"type": "string"}
+    }
+}
